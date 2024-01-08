@@ -67,12 +67,12 @@ function CustomDraggable({
   return (
     <div
       key={id}
-      className="absolute w-fit block text-black text-lg"
+      className="absolute w-fit block text-black text-lg group"
       style={{top: coordinates?.y, left: coordinates?.x}}
     >
       <p
         ref={drag}
-        className="absolute -top-4 -left-4 text-lg hover:cursor-move hide-item"
+        className="absolute -top-4 -left-4 text-lg hover:cursor-move hide-item invisible group-hover:visible"
       >
         ↔
       </p>
@@ -110,7 +110,7 @@ function CustomDraggable({
       )}
       <button
         onClick={handleDelete}
-        className="text-xs absolute -top-4 right-0 hide-item"
+        className="text-xs absolute -top-4 right-0 hide-item invisible group-hover:visible"
       >
         ❌
       </button>
