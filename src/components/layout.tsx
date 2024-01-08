@@ -3,7 +3,6 @@ import {HTML5Backend} from 'react-dnd-html5-backend';
 import {DndProvider} from 'react-dnd';
 import {Link, useParams} from 'react-router-dom';
 import html2canvas from 'html2canvas';
-import {addImage, back} from '../assets/images';
 import Draggable from './draggable';
 import {CanvasContext} from '../context/canvas-provider';
 import {UndoRedoContext} from '../context/undoRedo-provider';
@@ -123,7 +122,7 @@ function Aside({
             className="flex flex-col items-center justify-center gap-2 bg-gray-50 px-5 pt-1 pb-2 rounded-lg w-20 h-20 outline outline-transparent hover:bg-gray-100 hover:outline hover:outline-2 hover:outline-gray-300 transition-all duration-300"
             type="image"
           >
-            <img src={addImage} alt="" width={32} height={32} />
+            <img src="/add-image.svg" alt="" width={32} height={32} />
             <p className="text-xs font-medium text-gray-800">Media</p>
           </Draggable>
         </div>
@@ -194,7 +193,7 @@ function Header({children}: {children: React.ReactNode}) {
             to="/"
             className="flex items-center justify-center p-2 w-auto hover:bg-gray-700 rounded-lg"
           >
-            <img src={back} alt="" width={8} height={8} />
+            <img src="/back.svg" alt="" width={8} height={8} />
           </Link>
           {children}
         </div>

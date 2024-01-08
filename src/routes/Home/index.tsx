@@ -1,5 +1,4 @@
 import {useContext} from 'react';
-import {plus} from '../../assets/images';
 import {CanvasContext} from '../../context/canvas-provider';
 import {Canvas} from '../../types';
 
@@ -20,7 +19,7 @@ export default function Home() {
               onClick={createNewCanvas}
               className="h-36 flex flex-col gap-4 items-center justify-center outline-[0.5px] outline-dashed outline-gray-400 rounded"
             >
-              <img src={plus} alt="" width={20} height={20} />
+              <img src="/plus.svg" alt="" width={20} height={20} />
               <p className="font-bold text-xl text-gray-700">
                 Create new canvas
               </p>
