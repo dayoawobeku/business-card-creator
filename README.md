@@ -1,6 +1,6 @@
 # Business Card Creator
 
-![Live Demo](https://img.shields.io/github/license/bradgarropy/business-card-creator?style=flat-square)
+[Live url](https://business-card-creator-one.vercel.app/)
 
 This project is a web application that allows users to create custom business
 cards with text and images.
